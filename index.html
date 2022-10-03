@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/estilo/style.css">
+    </head>
+<body>
+    <img src="https://pbs.twimg.com/profile_images/1055574819717156865/_T3BAOeH_400x400.jpg" alt=”some text” width=300 height=200>
+    <h1>Cadastro de alunos</h1>
+    <h2>Use o fumulário abaixo para cadastrar alunos</h2>
+    <h3>nome</h3>
+    <form method="get" action="envio_dados.php">
+        <input type="text" name="nome" placeholder="digite seu Nome aqui">
+        <input type="e-mail" name="email" placeholder="Digite seu e-mail">
+    </form>
+    <form>
+        <h2>Novo aluno?</h2>
+        <input type="checkbox" name="aluno novo" value="sim">Sim<br>
+        <input type="checkbox" name="aluno novo" value="nao">Não<br>
+    </form>
+
+    <form>
+       <p>Data de nascimento: <input type="date" name="nascimento"></p>
+    </form>
+
+    <form>
+        <p>Qual faixa etária do aluno?</p>
+        <input type="radio" name="idade" value="18_22">18 a 22 <br>
+        <input type="radio" name="idade" value="23_30">23 a 30 <br>
+        <input type="radio" name="idade" value="mais31">acima de 31<br>
+    </form>
+
+    <form>
+        
+        <p>Observação 1: <input type="text" name="Observação 1"><br>
+        Observação 2: <input type="text" name="Observação 2"><br>
+        Observação 3: <input type="text" name="Observação 3"></p>
+    </form>
+
+    <table border="1">
+       
+        <tr>
+            <th  height="15">Matrícula</th>
+            <th>Nome</th>
+            <th>e-mail</th>
+            <th>Cidade</th>
+            <th>Idade</th>
+            <th>Nota de participação</th>
+        </tr>
+        <tr>
+            <td width="15%">50158</td>
+            <td>Paulo Carlos</td>
+            <td>paulo@fatec.sp.org.br</td>
+            <td>Salto</td>
+            <td>22</td>
+            <td>80</td>
+        </tr>
+        <tr>
+            <td width="15%">50159</td>
+            <td>Maria Clara</td>
+            <td>Maria@fatec.sp.org.br</td>
+            <td>Indaiatuba</td>
+            <td>25</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td width="15%">50160</td>
+            <td>Neymar Junior</td>
+            <td>n.jr@fatec.sp.org.br</td>
+            <td>Santos</td>
+            <td>27</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td width="15%">50161</td>
+            <td>Carlos Massa</td>
+            <td>massa@fatec.sp.org.br</td>
+            <td>Guaira</td>
+            <td>22</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td width="15%">50162</td>
+            <td>Carlos Ventura</td>
+            <td>ventura@fatec.sp.org.br</td>
+            <td>Sorocaba</td>
+            <td>21</td>
+            <td>80</td>
+        </tr>
+    </table>
+     
+    <p class="botao1"><img src="./images/salvar.png" alt="" srcset=""><input type="submit" name="acao" value="Enviar"></p>
+    <p><input type="submit" name="acao" value="Limpar"></p>
+</body>
+</html>
+
